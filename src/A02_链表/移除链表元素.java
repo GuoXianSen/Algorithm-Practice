@@ -1,4 +1,4 @@
-package 链表;
+package A02_链表;
 
 /**
  * @program: SoftExam
