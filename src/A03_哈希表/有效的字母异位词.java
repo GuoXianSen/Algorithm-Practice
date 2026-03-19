@@ -1,4 +1,4 @@
-package 哈希表;
+package A03_哈希表;
 
 import java.util.*;
 
