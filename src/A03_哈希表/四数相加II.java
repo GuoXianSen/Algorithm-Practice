@@ -10,6 +10,8 @@ public class 四数相加II {
         for (int i : nums1) {
             for (int j : nums2) {
                 map.merge(i + j, 1, Integer::sum);
+                // 等价于
+                // map.put(sum, map.getOrDefault(sum, 0) + 1);
             }
         }
         for (int i : nums3) {
@@ -17,6 +19,8 @@ public class 四数相加II {
                 if (map.containsKey(-i - j)) {
                     res += map.get(-i - j);
                 }
+                // 等价于
+                // res += map.getOrDefault(-i - j, 0);
             }
         }
         return res;
